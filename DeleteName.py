@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import filedialog
 
 # Указываем слова для удаления из имен файлов и папок
-words_to_remove = ["[SW.BAND]", "[SLIV.SITE]", "[sharewood-zerkalo.pro]", "[M1.Boominfo.ORG]", "Тренировки по DevOps", "[eground.org]", "[skladchik.org]"]
+words_to_remove = ["[SW.BAND]", "[SLIV.SITE]", "[sharewood-zerkalo.pro]", "[M1.Boominfo.ORG]", "Тренировки по DevOps", "[eground.org]", "[skladchik.org]", "Онлайн-школа RealManual.ru Кабинет ученика "]
 
 # Указываем запрещенные фразы для удаления файлов
 banned_phrases = [
@@ -11,7 +11,10 @@ banned_phrases = [
     "[WWW.SW.BAND] 150000 курсов ждут тебя!",
     "[WWW.SW.BAND] Прочти перед изучением!",
     "Перед изучением, посмотри сюда.txt",
-    "Введение IT.txt"
+    "Введение IT.txt",
+    "Eground - Скачивай платные курсы, тренинги и другие материалы - бесплатно!",
+    "Topkursy.com - Удаленные курсы Skillbox, GeekBrains, Гречик, Левчик, Митрошина, Вердикт и др",
+    "Присоединяйся в Telegram - @eground_live"
 ]
 
 def remove_words_and_delete_files(root_dir, words_to_remove, banned_phrases):
